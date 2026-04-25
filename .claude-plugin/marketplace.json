@@ -1,0 +1,18 @@
+{
+  "name": "jumad-plugins",
+  "owner": {
+    "name": "JuMaD"
+  },
+  "metadata": {
+    "description": "JuMaD's Claude Code plugins.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "repo-context",
+      "source": ".",
+      "description": "Hierarchical context loading from READMEs and plan files with YAML frontmatter. Discovers components, auto-resolves dependencies, and surfaces roadmap state to Claude on demand.",
+      "version": "0.1.0"
+    }
+  ]
+}

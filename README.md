@@ -41,10 +41,11 @@ A growing `CLAUDE.md` eventually hits two problems:
 
 ### Option A — As a Claude Code plugin (recommended)
 
-One-command install from Claude Code:
+This repo is both a Claude Code plugin and a self-hosted marketplace. Add the marketplace, then install the plugin:
 
 ```
-/plugin install github.com/JuMaD/repo-context
+/plugin marketplace add JuMaD/repo-context
+/plugin install repo-context@jumad-plugins
 ```
 
 Claude Code registers both slash commands and the skill automatically. The plugin manifest declares `pyyaml` as a dependency, so no separate pip step is needed.
@@ -52,7 +53,7 @@ Claude Code registers both slash commands and the skill automatically. The plugi
 To uninstall:
 
 ```
-/plugin uninstall repo-context
+/plugin uninstall repo-context@jumad-plugins
 ```
 
 ### Option B — Manual drop-in
