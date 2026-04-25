@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# Claude Code local settings (user-specific permissions, not shared)
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# Editor
+.idea/
+.vscode/
+*.swp

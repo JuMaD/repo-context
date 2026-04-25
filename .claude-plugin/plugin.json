@@ -1,0 +1,19 @@
+{
+  "name": "repo-context",
+  "version": "0.1.0",
+  "description": "Hierarchical context loading from READMEs and plan files with YAML frontmatter. Discovers components, auto-resolves dependencies, and surfaces roadmap state to Claude on demand.",
+  "author": "JuMaD",
+  "homepage": "https://github.com/JuMaD/repo-context",
+  "license": "MIT",
+  "skills": [
+    "skills/repo-context"
+  ],
+  "commands": [
+    "commands/repo-context.md",
+    "commands/repo-plans.md"
+  ],
+  "requires": {
+    "python": ">=3.10",
+    "pip": ["pyyaml>=6.0"]
+  }
+}
