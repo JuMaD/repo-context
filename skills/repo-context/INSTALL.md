@@ -8,15 +8,24 @@ Two ways to install this into your repo (or your global Claude Code setup). Pick
 
 **When to use:** you want one-command install, automatic updates, and the skill to be shareable across all your repos.
 
+This repo is both a Claude Code plugin and a self-hosted marketplace (`.claude-plugin/marketplace.json`). Add the marketplace, then install the plugin:
+
 ```bash
-/plugin install github.com/JuMaD/repo-context
+/plugin marketplace add JuMaD/repo-context
+/plugin install repo-context@jumad-plugins
 ```
 
-Claude Code registers the `/repo-context` and `/repo-plans` commands and the skill automatically. The plugin manifest at `.claude-plugin/plugin.json` declares `pyyaml` as a dependency, so no separate install step is needed.
+Claude Code registers the `/repo-context` and `/repo-plans` commands and the skill automatically.
+
+The skill's Python scripts need PyYAML. Install it in whichever Python is on `PATH` when Claude runs `python3`:
+
+```bash
+pip install pyyaml   # or: uv add pyyaml
+```
 
 To uninstall:
 ```bash
-/plugin uninstall repo-context
+/plugin uninstall repo-context@jumad-plugins
 ```
 
 ---

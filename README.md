@@ -48,7 +48,13 @@ This repo is both a Claude Code plugin and a self-hosted marketplace. Add the ma
 /plugin install repo-context@jumad-plugins
 ```
 
-Claude Code registers both slash commands and the skill automatically. The plugin manifest declares `pyyaml` as a dependency, so no separate pip step is needed.
+Claude Code registers both slash commands and the skill automatically.
+
+The skill's Python scripts need PyYAML. Install it in whichever Python is on `PATH` when Claude runs `python3`:
+
+```bash
+pip install pyyaml   # or: uv add pyyaml
+```
 
 To uninstall:
 
